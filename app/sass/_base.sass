@@ -1,128 +1,69 @@
+[v-cloak]
+  display: none
+
 *
-	outline: none
-	box-sizing: border-box
+  outline: none
+  box-sizing: border-box
 
 body
-	//font-family: $default-font
-	+font-size(23)
-	+line-height(32)
-	//color: map-get($text-colors, black)
+  font-family: $default-font
+  +font-size(16)
+  +line-height(28)
+  color: map-get($text-colors, primary)
 
 h1
-	margin: 35px 0
+  margin: 15px 0
+  +font-size(30)
+  +line-height(38)
+  font-weight: bold
+  color: map-get($text-colors, black)
+  letter-spacing: -1px
 
 h2
-	margin: 20px 0
+  margin: 20px 0
 
 p
-	margin: 15px 0
+  margin: 15px 0
 
 a
-	text-decoration: none
+  text-decoration: none
 
-.hidden
-	display: none!important
-
-.text-upper
-	text-transform: uppercase
-
-.text-overflow
-	display: inline-block
-	width: 100%
-	white-space: nowrap
-	overflow: hidden
-	text-overflow: ellipsis
-
-.for-img
-	text-align: center
-	img
-		max-width: 100%
-		max-height: 100%
-		height: auto
 .cover-img
-	position: relative
-	overflow: hidden
-	&:before
-		display: block
-		content: ""
-	.image
-		position: absolute
-		top: 0
-		left: 0
-		min-width: 100%
-		min-height: 100%
-		max-width: 100%
-		object-fit: cover
-.contain-img
-	position: relative
-	overflow: hidden
-	&:before
-		display: block
-		content: ""
-	.image
-		position: absolute
-		top: 50%
-		left: 50%
-		transform: translate(-50%, -50%)
-		max-width: 100% 
-		max-height: 100%
-		object-fit: contain
-
-.visually-hidden
-	position: absolute
-	white-space: nowrap
-	width: 1px
-	height: 1px
-	overflow: hidden
-	border: 0
-	padding: 0
-	clip: rect(0, 0, 0, 0)
+  position: relative
+  overflow: hidden
+  &:before
+    display: block
+    content: ""
+  .image
+    position: absolute
+    top: 0
+    left: 0
+    min-width: 100%
+    min-height: 100%
+    max-width: 100%
+    object-fit: cover
 
 .wrapper
-	position: relative
-	display: flex
-	flex-direction: column
-	width: 100%
-	max-width: 1920px
-	min-height: 100vh
-	background: #fff
-	overflow: hidden
+  position: relative
+  width: 100%
+  max-width: 1920px
+  background: #fff
 
 .container
-	position: relative
-	width: 100%
-	max-width: 1200px
-	margin: 0 auto
-	padding: 0 20px
-.radio-group_row
-  display: grid
-  grid-template-columns: 1fr 1fr
-  grid-gap: 6px
-.radio-label
   position: relative
-.radio-text
-  display: flex
-  justify-content: center
-  align-items: center
-  height: 39px
-  padding: 10px
-  background-color: transparent
-  border: 1px solid #D8D8D8
-  border-radius: 5px
-  text-align: center
-  
-  color: #fff
+  width: 100%
+  max-width: 1100px
+  margin: 0 auto
+  padding: 0 20px
+  &_lg
+    max-width: 1320px
 
-  overflow: hidden
-  text-overflow: ellipsis
-  white-space: nowrap
-
-  cursor: pointer
-
-.radio-input:checked ~ .radio-text
-  background-color: green
-  border-color: green
-  font-weight: 500
-  color: #ccc
-  cursor: default
- 
+@media screen and (max-width: 1199px) 
+  .container
+    padding: 0 30px
+    
+@media screen and (max-width: 767px)
+  .container
+    padding: 0 15px
+  h1
+    +font-size(26)
