@@ -1,0 +1,36 @@
+.hero
+  position: relative
+  min-height: 770px
+  padding: 153px 0 152px
+  background-color: map-get($bg-colors, blue)
+  &-img
+    position: absolute
+    top: 0
+    left: 50%
+    height: 100%
+    width: 50%
+  &-inner
+    display: flex
+    align-items: center
+  &-left,
+  &-center
+    flex: 0 0 33.33%
+    max-width: 33.33%
+  &-left
+    padding-right: 50px
+    padding-top: 35px
+  &-left-inner
+    max-width: 310px
+  &-subtitle
+    margin: 0
+    +font-size(14)
+    +line-height(20)
+    font-weight: bold
+    color: map-get($text-colors, grey)
+    letter-spacing: 1.1px
+  &-title
+    margin: 6px 0 28px
+  &-form
+    padding: 78px 56px 70px 56px
+    background-color: rgba(28,28,28,.9)
+    border-radius: 10px

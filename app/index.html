@@ -2,16 +2,16 @@
 <html lang="en">
 
 <head>
-	<meta charset="utf-8">
-	<title>Project Title</title>
+  <meta charset="utf-8">
+  <title>Project Title</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
-	<link rel="stylesheet" href="css/app.min.css">
+  <link rel="stylesheet" href="css/app.min.css">
 </head>
 
 <body>
 
-	<div class="wrapper">
+  <div class="wrapper">
 
     <!-- HERO -->
     <div class="hero">
@@ -24,33 +24,35 @@
         <source media="(min-width: 768px) and (max-width: 1439px)" srcset="./images/dest/hero-md.jpg">
     
         <source type="image/webp" media="(max-width: 767px)" srcset="./images/dest/hero.webp">
-        <img media="(max-width: 767px)" src="./images/dest/hero.jpg">
+        <img class="image" media="(max-width: 767px)" src="./images/dest/hero.jpg">
       </picture>
 
       <div class="container container_lg">
         <div class="hero-inner">
 
           <div class="hero-left">
-            <p class="hero-subtitle">GET STARTED WITHIN 2 MINUTES</p>
-            <h1 class="hero-title">Learn How To Bake In
-              5 Easy Steps</h1>
-            <p class="hero-descr">No doubt, you need more one pot dinners in your life like this easy 
-              Bosnian-style chicken and rice. This recipe is made all over the world with countless variations on the theme.</p>
+            <div class="hero-left-inner">
+              <p class="hero-subtitle">GET STARTED WITHIN 2 MINUTES</p>
+              <h1 class="hero-title">Learn How To Bake In
+                5 Easy Steps</h1>
+              <p class="hero-descr">No doubt, you need more one pot dinners in your life like this easy 
+                Bosnian-style chicken and rice. This recipe is made all over the world with countless variations on the theme.</p>
+            </div>
           </div>
 
           <div class="hero-center">
             <form class="hero-form">
               <div class="form-group">
-                <input type="text" placeholder="Your Name">
+                <input class="form-text" type="text" placeholder="Your Name">
               </div>
               <div class="form-group">
-                <input type="email" placeholder="Your Email">
+                <input class="form-text" type="email" placeholder="Your Email">
               </div>
               <div class="form-group">
-                <input type="text" placeholder="Phone">
+                <input class="form-text" type="text" placeholder="Phone">
               </div>
               <div class="form-group">
-                <button class="btn">Download eBook Now</button>
+                <button class="btn btn-block">Download eBook Now</button>
               </div>
               <div class="form-footer">* We don’t share your personal info with anyone. 
                 Check out our Policy for more information.</div>
@@ -115,8 +117,8 @@
     </section>
     <!-- ADVICE END -->
 
-	</div>
+  </div>
 
-	<script src="js/app.min.js"></script>
+  <script src="js/app.min.js"></script>
 </body>
 </html>
