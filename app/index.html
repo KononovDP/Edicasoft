@@ -7,6 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/app.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/vue@2.6.11"></script>
 </head>
 
 <body>
@@ -41,15 +42,18 @@
           </div>
 
           <div class="hero-center">
-            <form class="hero-form">
+            <form id="form" class="hero-form" @submit.prevent="handleSubmit" v-cloak>
               <div class="form-group">
-                <input class="form-text" type="text" placeholder="Your Name">
+                <input class="form-text" type="text" placeholder="Your Name" v-model="name">
+                <span class="form-message" v-if="errorName">{{errorNameMessage}}</span> 
               </div>
               <div class="form-group">
-                <input class="form-text" type="email" placeholder="Your Email">
+                <input class="form-text" type="text" placeholder="Your Email" v-model="email">
+                <span class="form-message" v-if="errorEmail">{{errorEmailMessage}}</span> 
               </div>
               <div class="form-group">
-                <input class="form-text" type="text" placeholder="Phone">
+                <input class="form-text" type="text" placeholder="0964086314"  v-model="phone">
+                <span class="form-message" v-if="errorPhone">{{errorPhoneMessage}}</span> 
               </div>
               <div class="form-group">
                 <button class="btn btn-block">Download eBook Now</button>
@@ -93,7 +97,7 @@
           <div class="advice-item">
             <picture class="advice-img cover-img">
               <source type="image/webp" media="(min-width: 1200px) and (max-width: 1920px)" srcset="./images/dest/advice-2-lg.webp">
-              <source media="(min-width: 1200px) and (max-width: 1920px)" srcset="./images/dest/advice-2-lg.png">
+              <source media="(min-width: 1200px) and (max-width: 192px)" srcset="./images/dest/advice-2-lg.png">
           
               <source type="image/webp" media="(min-width: 768px) and (max-width: 1199px)" srcset="./images/dest/advice-2-md.webp">
               <source media="(min-width: 768px) and (max-width: 1199px)" srcset="./images/dest/advice-2-md.jpg">
