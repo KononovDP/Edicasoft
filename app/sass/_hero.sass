@@ -1,7 +1,9 @@
 .hero
   position: relative
+  display: flex
+  align-items: center
   min-height: 770px
-  padding: 153px 0 152px
+  padding: 50px 0
   background-color: map-get($bg-colors, blue)
   &-img
     position: absolute
@@ -34,3 +36,17 @@
     padding: 78px 56px 70px 56px
     background-color: rgba(28,28,28,.9)
     border-radius: 10px
+
+@media screen and (max-width: 1199px)  
+  .hero
+    &-img
+      left: 73%
+      width: 27%
+    &-left,
+    &-center
+      flex: 0 0 50%
+      max-width: 50%
+    &-left
+      padding-top: 15px
+    &-form
+      padding: 40px 22px 34px 22px

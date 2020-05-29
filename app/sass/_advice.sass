@@ -29,4 +29,24 @@
       flex-direction: row-reverse
       .advice-text
         padding: 0 73px 0 0
-            
+
+@media screen and (max-width: 1199px)  
+  .advice
+    padding: 40px 0
+    &-item
+      margin-bottom: 30px
+    &-img
+      flex: 0 0 48.5%
+      max-width: 48.5%
+      &::before
+        padding-top: 101.74%
+    &-text
+      flex: 0 0 51.5%
+      max-width: 51.5%
+      padding: 0 0 0 50px
+  .advice
+    &-item
+      &:nth-child(even)
+        flex-direction: row
+        .advice-text
+          padding: 0 0 0 50px
