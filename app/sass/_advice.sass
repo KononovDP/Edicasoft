@@ -1,0 +1,32 @@
+.advice
+  padding: 70px 0
+  &-item
+    display: flex
+    align-items: center
+    margin-bottom: 50px
+  &-img
+    align-self: flex-start
+    flex: 0 0 59.15%
+    max-width: 59.15%
+    &::before
+      padding-top: 55.82%
+  &-text
+    flex: 0 0 40.85%
+    max-width: 40.85%
+    padding: 0 0 0 73px
+  &-title
+    margin: 15px 0 30px
+    +font-size(22)
+    +line-height(34)
+    font-weight: bold
+    color: map-get($text-colors, black)
+    letter-spacing: -.5px
+
+
+.advice
+  &-item
+    &:nth-child(even)
+      flex-direction: row-reverse
+      .advice-text
+        padding: 0 73px 0 0
+            
