@@ -1,19 +1,14 @@
 .advice
-  padding: 70px 0
+  padding: 40px 0
   &-item
-    display: flex
-    align-items: center
-    margin-bottom: 50px
+    margin-bottom: 40px
   &-img
-    align-self: flex-start
-    flex: 0 0 59.15%
+    display: block
+    width: 100%
     &::before
-      padding-top: 55.82%
-  &-text
-    flex: 0 0 40.85%
-    padding: 0 0 0 73px
+      padding-top: 69.82%
   &-title
-    margin: 15px 0 30px
+    margin: 20px 0 15px
     +font-size(22)
     +line-height(34)
     font-weight: bold
@@ -21,17 +16,12 @@
     letter-spacing: -.5px
 
 
-.advice
-  &-item
-    &:nth-child(even)
-      flex-direction: row-reverse
-      .advice-text
-        padding: 0 73px 0 0
-
-@media screen and (max-width: 1199px)
+@media screen and (min-width: 768px)
   .advice
     padding: 40px 0
-    &-item
+    &-item      
+      display: flex
+      align-items: center
       margin-bottom: 30px
     &-img
       flex: 0 0 48.5%
@@ -40,32 +30,25 @@
     &-text
       flex: 0 0 51.5%
       padding: 0 0 0 50px
-  .advice
-    &-item
-      &:nth-child(even)
-        flex-direction: row
-        .advice-text
-          padding: 0 0 0 50px
-
-@media screen and (max-width: 767px)
-  .advice
-    &-item
-      flex-direction: column
-      margin-bottom: 20px
-    &-img
-      flex: 0 0 100%
-      width: 100%
-      &::before
-        padding-top: 70%
-    &-text
-      flex: 0 0 100%
-      padding: 5px 0
     &-title
-      margin: 15px 0
+        margin: 15px 0 30px
 
+@media screen and (min-width: 1200px)
+  .advice
+    padding: 70px 0
+    &-item
+      margin-bottom: 50px
+    &-img
+      flex: 0 0 59.15%
+      &::before
+        padding-top: 55.82%
+    &-text
+      flex: 0 0 40.85%
+      padding: 0 0 0 73px
+    
   .advice
     &-item
       &:nth-child(even)
-        flex-direction: column
+        flex-direction: row-reverse
         .advice-text
-          padding: 5px 0
+          padding: 0 73px 0 0

@@ -2,26 +2,18 @@
   position: relative
   display: flex
   align-items: center
-  min-height: 770px
   padding: 50px 0
   background-color: map-get($bg-colors, blue)
   &-img
     position: absolute
     top: 0
-    left: 50%
     height: 100%
-    width: 50%
-  &-inner
-    display: flex
-    align-items: center
-  &-left,
-  &-center
-    flex: 0 0 33.33%
+    left: 84%
+    width: 16%
   &-left
-    padding-right: 50px
-    padding-top: 35px
+    margin-bottom: 40px
   &-left-inner
-    max-width: 310px
+    max-width: 300px
   &-subtitle
     margin: 0
     +font-size(14)
@@ -32,42 +24,36 @@
   &-title
     margin: 6px 0 28px
   &-form
-    padding: 78px 56px 70px 56px
+    padding: 40px 22px 34px 22px
     background-color: rgba(28,28,28,.9)
     border-radius: 10px
 
-@media screen and (max-width: 1199px)  
+@media screen and (min-width: 768px)
   .hero
+    min-height: 770px
     &-img
       left: 73%
-      width: 27%
+      width: 27%      
+    &-inner
+      display: flex
+      align-items: center
     &-left,
     &-center
       flex: 0 0 50%
     &-left
+      margin-bottom: 
+      padding-right: 5px
       padding-top: 15px
     &-form
       padding: 40px 22px 34px 22px
 
-@media screen and (max-width: 767px)
+@media screen and (min-width: 1200px)
   .hero
-    min-height: inherit
-    padding: 50px 0
     &-img
-      left: 84%
-      width: 16%
-    &-inner
-      flex-direction: column
-      align-items: flex-start
+      left: 50%
+      width: 50%
     &-left,
     &-center
-      flex: 0 0 100%
-    &-left
-      margin-bottom: 25px
-      padding-top: 0
-    &-left-inner
-      max-width: 300px
-    &-title
-      margin: 6px 0 28px
-    &-form
-      padding: 40px 22px 34px 22px
+      flex: 0 0 33.33%
+    &-form       
+      padding: 78px 56px 70px 56px
