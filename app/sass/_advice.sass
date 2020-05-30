@@ -1,13 +1,13 @@
 .advice
   padding: 40px 0
-  &-item
+  &__item
     margin-bottom: 40px
-  &-img
+  &__img
     display: block
     width: 100%
     &::before
       padding-top: 69.82%
-  &-title
+  &__title
     margin: 20px 0 15px
     +font-size(22)
     +line-height(34)
@@ -19,36 +19,36 @@
 @media screen and (min-width: 768px)
   .advice
     padding: 40px 0
-    &-item      
+    &__item      
       display: flex
       align-items: center
       margin-bottom: 30px
-    &-img
+    &__img
       flex: 0 0 48.5%
       &::before
         padding-top: 101.74%
-    &-text
+    &__text
       flex: 0 0 51.5%
       padding: 0 0 0 50px
-    &-title
+    &__title
         margin: 15px 0 30px
 
 @media screen and (min-width: 1200px)
   .advice
     padding: 70px 0
-    &-item
+    &__item
       margin-bottom: 50px
-    &-img
+    &__img
       flex: 0 0 59.15%
       &::before
         padding-top: 55.82%
-    &-text
+    &__text
       flex: 0 0 40.85%
       padding: 0 0 0 73px
     
   .advice
-    &-item
+    &__item
       &:nth-child(even)
         flex-direction: row-reverse
-        .advice-text
+        .advice__text
           padding: 0 73px 0 0
